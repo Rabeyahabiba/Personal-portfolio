@@ -477,7 +477,7 @@ section .title::after{
 .contact .contact-content .info .sub-title{
     color: #333;
 }
-.contact .right form .fields{
+/* .contact .right form .fields{
     display: flex;
 }
 .contact .right form .field,
@@ -533,6 +533,66 @@ section .title::after{
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
+  color: crimson;
+  background: none;
+} */
+
+.contact .right .fields{
+    display: flex;
+}
+.contact .right .field,
+.contact .right .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right .name{
+    margin-right: 10px;
+}
+.contact .right .field input,
+.contact .right .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right .field input:focus,
+.contact .right .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right .button-area{
+  display: flex;
+  align-items: center;
+}
+.right .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.right .button-area button:hover{
   color: crimson;
   background: none;
 }
@@ -679,34 +739,4 @@ footer span a:hover{
     }
 }
 
-/* #status {
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-  #status.success {
-    background-color: rgb(211, 250, 153);
-    animation: status 4s ease forwards;
-  }
-  #status.error {
-    background-color: rgb(250, 129, 92);
-    color: white;
-    animation: status 4s ease forwards;
-  }
-  @keyframes status {
-    0% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    90% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    100% {
-      opacity: 0;
-      pointer-events: none;
-    }
-  } */
+
