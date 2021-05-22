@@ -420,6 +420,9 @@ section .title::after{
 .projects .carousel .card:hover img{
     border-color: #fff;
 }
+.projects .carousel .card .link{
+    word-spacing: 10px;
+}
 /* .link {
     display: flex;
 } */
@@ -554,6 +557,17 @@ footer span a{
 }
 footer span a:hover{
     text-decoration: underline;
+}
+footer .menu .social-network ul li a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    background-color:rgb(167, 159, 160);
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.5s;
 }
 
 
